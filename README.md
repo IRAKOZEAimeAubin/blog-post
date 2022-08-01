@@ -2,6 +2,10 @@
 > This is a simple personal blog API for documenting the best and not so best parts of your daily life.
 ## 📃Description
 This blog API allows users to write, read, modify and delete their personal blogs.
+## 🔔Documentation
+To access the API documentation please visit [Blog API](https://blog-api-lite.herokuapp.com/ "Blog API") and click on the `Documentation` link.
+
+⚠**Warning**: Please make sure to login/register a user and copy the `token` provided in the response body and paste it in the area provided after clicking on `Authorize` in order to access other routes.
 ## ✨Features
 * User authentication
 * Create, read, update and delete options for blog posts
