@@ -49,7 +49,7 @@ This blog API allows users to write, read, modify and delete their personal blog
   "body": "Yesterday we arrived in Thailand for our 2 weeks vacation."
  }
  ```
-  * **Response Body**:
+ * **Response Body**:
  ```js
  {
   "post": {
@@ -182,4 +182,5 @@ npm run start
   npm run dev
   ```
 Have fun 🎉
+---
 This was made by [Aubin](https://github.com/IRAKOZEAimeAubin "Aubin") with ❤ and javaScript 👨🏿‍💻
