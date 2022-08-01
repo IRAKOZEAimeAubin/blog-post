@@ -52,15 +52,15 @@ This blog API allows users to write, read, modify and delete their personal blog
   * **Response Body**:
   ```json
   {
-  "post": {
-    "title": "Thailand Trips",
-    "body": "Yesterday we arrived in Thailand for our 2 weeks vacation.",
-    "createdBy": "62c5988fb638d8243c846143",
-    "_id": "62e7a8b9151a0f780f64c788",
-    "createdAt": "2022-08-01T10:19:37.347Z",
-    "updatedAt": "2022-08-01T10:19:37.347Z",
-    "__v": 0
-  }
+   "post": {
+     "title": "Thailand Trips",
+     "body": "Yesterday we arrived in Thailand for our 2 weeks vacation.",
+     "createdBy": "62c5988fb638d8243c846143",
+     "_id": "62e7a8b9151a0f780f64c788",
+     "createdAt": "2022-08-01T10:19:37.347Z",
+     "updatedAt": "2022-08-01T10:19:37.347Z",
+     "__v": 0
+   }
   }
   ```
 * **GET /posts**: Retrieve all the posts by the current user logged in
