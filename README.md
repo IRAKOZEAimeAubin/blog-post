@@ -7,7 +7,7 @@ This blog API allows users to write, read, modify and delete their personal blog
 * Create, read, update and delete options for blog posts
 ## 💣API Endpoints
 * **POST /auth/register**: Create an account
-  * **Request Body**:
+ * **Request Body**:
   ```js
   {
   "name": "james doe",
@@ -15,7 +15,7 @@ This blog API allows users to write, read, modify and delete their personal blog
   "password": "secret"
   }
   ```
-  * **Response Body**:
+ * **Response Body**:
   ```js
   {
   "user": {
@@ -32,7 +32,7 @@ This blog API allows users to write, read, modify and delete their personal blog
   "password": "secret"
   }
   ```
-  * **Response Body**:
+ * **Response Body**:
   ```js
   {
   "user": {
@@ -127,5 +127,3 @@ This blog API allows users to write, read, modify and delete their personal blog
   }
  }
  ```
- 
- 
