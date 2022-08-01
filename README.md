@@ -173,7 +173,7 @@ npm run start
 ```
 * **To run the app in development**:
   * *First, install **nodemon** using `npm install -D nodemon`*
-  * *Secondly, add the following line in the `package.json` file in the `scripts` section
+  * *Secondly, add the following line in the `package.json` file in the `scripts` section*:
   ```json
   "dev": "nodemon app.js"
   ```
