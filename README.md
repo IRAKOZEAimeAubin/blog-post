@@ -49,7 +49,7 @@ This blog API allows users to write, read, modify and delete their personal blog
   "body": "Yesterday we arrived in Thailand for our 2 weeks vacation."
  }
  ```
-  * **Response Body**:
+ * **Response Body**:
  ```js
  {
   "post": {
