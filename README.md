@@ -7,7 +7,7 @@ This blog API allows users to write, read, modify and delete their personal blog
 * Create, read, update and delete options for blog posts
 ## 💣API Endpoints
 * **POST /auth/register**: Create an account
- * **Request Body**:
+  * **Request Body**:
   ```js
   {
   "name": "james doe",
@@ -15,7 +15,7 @@ This blog API allows users to write, read, modify and delete their personal blog
   "password": "secret"
   }
   ```
- * **Response Body**:
+  * **Response Body**:
   ```js
   {
   "user": {
@@ -25,14 +25,14 @@ This blog API allows users to write, read, modify and delete their personal blog
   }
   ```
 * **POST /auth/login**: Login into an existing account
- * **Request Body**:
+  * **Request Body**:
   ```js
   {
   "email": "janedoe@email.com",
   "password": "secret"
   }
   ```
- * **Response Body**:
+  * **Response Body**:
   ```js
   {
   "user": {
@@ -42,14 +42,14 @@ This blog API allows users to write, read, modify and delete their personal blog
   }
   ```
 * **POST /posts**: Create a blog post
- * **Request Body**:
+  * **Request Body**:
  ```js
  {
   "title": "Thailand Trips",
   "body": "Yesterday we arrived in Thailand for our 2 weeks vacation."
  }
  ```
- * **Response Body**:
+  * **Response Body**:
  ```js
  {
   "post": {
@@ -184,4 +184,4 @@ npm run start
 Have fun 🎉
 ---
 ---
-This was made by [Aubin](https://github.com/IRAKOZEAimeAubin "Aubin) with ❤ and javaScript 👨🏿‍💻
+This was made by [Aubin](https://github.com/IRAKOZEAimeAubin "Aubin") with ❤ and javaScript 👨🏿‍💻
