@@ -8,7 +8,7 @@ This blog API allows users to write, read, modify and delete their personal blog
 ## 💣API Endpoints
 * **POST /auth/register**: Create an account
   * **Request Body**:
-  ```js
+  ```json
   {
   "name": "james doe",
   "email": "jamesdoe@email.com",
@@ -16,7 +16,7 @@ This blog API allows users to write, read, modify and delete their personal blog
   }
   ```
   * **Response Body**:
-  ```js
+  ```json
   {
   "user": {
     "name": "james doe"
@@ -26,14 +26,14 @@ This blog API allows users to write, read, modify and delete their personal blog
   ```
 * **POST /auth/login**: Login into an existing account
   * **Request Body**:
-  ```js
+  ```json
   {
   "email": "janedoe@email.com",
   "password": "secret"
   }
   ```
   * **Response Body**:
-  ```js
+  ```json
   {
   "user": {
     "name": "jane doe"
@@ -41,32 +41,32 @@ This blog API allows users to write, read, modify and delete their personal blog
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmM1OTg4ZmI2MzhkODI0M2M4NDYxNDMiLCJuYW1lIjoiamFuZSBkb2UiLCJpYXQiOjE2NTkzNDg4MDcsImV4cCI6MTY2MTk0MDgwN30.NBOmSpH0d5bdlEsZdqBHEFeoKFJwkcUG2CcPh3nGc1Q"
   }
   ```
-* **POST /posts**: Create a blog post
+* **POST /posts**: Create an account
   * **Request Body**:
- ```js
- {
+  ```json
+  {
   "title": "Thailand Trips",
   "body": "Yesterday we arrived in Thailand for our 2 weeks vacation."
- }
- ```
- * **Response Body**:
-  ```js
+  }
+  ```
+  * **Response Body**:
+  ```json
   {
-   "post": {
-     "title": "Thailand Trips",
-     "body": "Yesterday we arrived in Thailand for our 2 weeks vacation.",
-     "createdBy": "62c5988fb638d8243c846143",
-     "_id": "62e7a8b9151a0f780f64c788",
-     "createdAt": "2022-08-01T10:19:37.347Z",
-     "updatedAt": "2022-08-01T10:19:37.347Z",
-     "__v": 0
-   }
+  "post": {
+    "title": "Thailand Trips",
+    "body": "Yesterday we arrived in Thailand for our 2 weeks vacation.",
+    "createdBy": "62c5988fb638d8243c846143",
+    "_id": "62e7a8b9151a0f780f64c788",
+    "createdAt": "2022-08-01T10:19:37.347Z",
+    "updatedAt": "2022-08-01T10:19:37.347Z",
+    "__v": 0
+  }
   }
   ```
 * **GET /posts**: Retrieve all the posts by the current user logged in
   * **Request Body**: *No request body is necessary*
   * **Response Body**:
-   ```js
+   ```json
    {
     "posts": [
       {
@@ -112,7 +112,7 @@ This blog API allows users to write, read, modify and delete their personal blog
 * **GET /posts/:id**: Retrieve a single post by the current user logged in
   * **Request Body**: *No request body is necessary just provide the post id*
   * **Response Body**:
-   ```js
+   ```json
    {
     "post": {
       "_id": "62e7aab0151a0f780f64c78b",
@@ -127,14 +127,14 @@ This blog API allows users to write, read, modify and delete their personal blog
    ```
 * **PATCH /posts/:id**: Update a post by the current user logged in
   * **Request Body**: *Post id should also be provided along with request body*
-  ```js
+  ```json
   {
   "title": "Darth Maul vs Obi-Wan Kenobi",
   "body": "This is in my personal opinion the best lightsaber duel in the whole Star Wars franchise to this day."
   }
   ```
   * **Response Body**:
-  ```js
+  ```json
   {
   "post": {
     "_id": "62e7aab0151a0f780f64c78b",
